@@ -1,0 +1,25 @@
+PROCEDURE swap(arr[i],arr[min_index]:INTEGER)
+VAR
+    VAR
+    tmp:INTEGER;
+BEGIN
+    tmp:=arr[i];
+    arr[i]:=arr[min_index];
+    arr[min_index]:=tmp;
+END
+PROCEDURE select_sort(VAR tab:ARRAY_OF INTEGER)
+VAR
+    i,j,min_index:INTEGER;
+BEGIN
+i=0;
+FOR i FROM 0 TO arr.length STEP 1  DO
+min_index:=i;
+FOR j FROM i+1 TO arr.length STEP 1  DO
+    IF (arr[min_index]>arr[j]) THEN
+        min_index:=j;
+    END_IF
+END_FOR 
+swap (arr[i],arr[min_index])
+END_FOR
+     
+END
